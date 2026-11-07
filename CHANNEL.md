@@ -1,6 +1,6 @@
 # History of Dread: Channel Bible
 
-History of Dread is a YouTube and Instagram channel about what people feared, who feared it, and what actually happened. Brig directs and approves the work. Claude does most of it: research, scripts, source checks, the episode tracker, and the automation.
+The History of Dread ([@thehistoryofdread](https://www.youtube.com/@thehistoryofdread), channel ID `UCNhfgcrCJICIiJjVcEKFJAw`) is a YouTube and Instagram channel about what people feared, who feared it, and what actually happened. Brig directs and approves the work. Claude does most of it: research, scripts, source checks, the episode tracker, and the automation.
 
 ## The goal
 

@@ -2,6 +2,8 @@
 
 A YouTube channel about what people feared, who feared it, and what actually happened.
 
+**Channel:** [The History of Dread (@thehistoryofdread)](https://www.youtube.com/@thehistoryofdread) · channel ID `UCNhfgcrCJICIiJjVcEKFJAw`
+
 Each episode opens with a **Dread Score** (how bad the fear was) and closes with **Dread to Outcome**: how bad things really turned out, and whether it was worse than feared, better than feared, or as feared.
 
 The goal is a monetised channel. See [CHANNEL.md](CHANNEL.md) for the format, scoring and standards.
