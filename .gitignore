@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Media lives in Google Drive, not git
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.words.json
+media/
+out/

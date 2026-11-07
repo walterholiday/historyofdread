@@ -1,0 +1,19 @@
+number: 4
+title: The Sky Is Falling
+person: Eugene Shoemaker
+year: 1908-today
+outcome_label: Ongoing
+category: Natural catastrophe / end of the world
+target_minutes: 10-12
+status: drafted
+
+dread_score:
+  intensity: 4
+  reach: 6
+  stakes: 10
+  total: 6.7
+outcome_score: Undecided
+verdict: Undecided
+
+links:
+  script_doc: https://claude.ai/artifact/HwgcxHdo86PPfUbcgzFqaa

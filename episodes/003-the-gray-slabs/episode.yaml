@@ -1,0 +1,23 @@
+number: 3
+title: The Gray Slabs
+person: Lee Krasner
+year: 1939-1945
+outcome_label: Realised
+category: War
+target_minutes: 10
+status: drafted   # current draft is about 5 minutes; needs expanding to 10
+
+dread_score:
+  intensity: 7
+  reach: 7
+  stakes: 8
+  total: 7.3
+outcome_score: 10
+verdict: Worse than feared
+
+notes:
+  - The link between Krasner's block and the war comes mainly from art historians, not a confirmed quote of hers. Narrate it as interpretation.
+  - Holocaust subject matter may get limited ads. Schedule it between lighter episodes.
+
+links:
+  script_doc: https://claude.ai/artifact/58Cfwt1hfCL6fFnSXzFw6M

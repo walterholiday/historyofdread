@@ -1,0 +1,35 @@
+number: 1
+title: The Night the Sky Lied
+person: Stanislav Petrov
+year: 1983
+outcome_label: Averted by luck
+category: War / nuclear
+target_minutes: 12-13
+status: script-locked   # idea | drafted | script-locked | recorded | rough-cut | published
+
+dread_score:
+  intensity: 8
+  reach: 9
+  stakes: 10
+  total: 9.0
+outcome_score: 0
+verdict: Better than feared
+
+links:
+  script_doc: https://claude.ai/artifact/P2v3sRoC9RmbwZecYrqwxe
+  shot_list_doc: https://claude.ai/artifact/L8S5Fqgh5qdNFARnJVfj9x
+
+still_to_verify:
+  - Bunker distance from Moscow (sources disagree)
+  - Pershing II flight time to Soviet command centres and deployment date
+  - Date Oko entered service
+  - Date of Raisa Petrov's death
+  - Able Archer 83 Soviet alert claims
+  - The Day After audience figure
+  - INF Treaty date (December 1987)
+
+verified:
+  - Petrov's "fifty-fifty" estimate of his odds
+  - Votintsev made the incident public
+  - Reagan's diary on The Day After (advance copy, 10 Oct 1983, "greatly depressed")
+  - Filling in for an ill colleague is widely reported but traces to Petrov's own later interviews, so it is narrated as "by his own account"

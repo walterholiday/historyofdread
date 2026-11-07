@@ -1,0 +1,19 @@
+number: 2
+title: The Comet's Poison Tail
+person: Camille Flammarion
+year: 1910
+outcome_label: Pure myth
+category: Science / end of the world
+target_minutes: 10
+status: drafted   # current draft is about 5 minutes; needs expanding to 10
+
+dread_score:
+  intensity: 6
+  reach: 7
+  stakes: 10
+  total: 7.7
+outcome_score: 0
+verdict: Better than feared
+
+links:
+  script_doc: https://claude.ai/artifact/UBr5ce2rZxGxEvckstZrYg

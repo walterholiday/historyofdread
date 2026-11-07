@@ -1,0 +1,326 @@
+# Shot list for the rough-cut builder.
+#
+# Each shot starts where Brig says its `cue` (a few words from script.md).
+# Use `at: "m:ss"` instead to pin a shot to an exact time.
+# `media` is a file name inside the --media folder. If the file isn't there
+# yet, the builder drops in a labelled placeholder so the cut still builds.
+#
+# kind:    image | video | card
+# motion:  zoom-in | zoom-out | pan-left | pan-right | still   (images only)
+# clip_start:  where to start inside a video clip, "m:ss"
+# clip_audio:  0 to 1, how loud to keep the clip's own sound (default 0)
+#
+# Aim for a new picture every 5 to 15 seconds. The builder flags anything
+# on screen for more than 20.
+
+shots:
+  # --- Opening -------------------------------------------------------------
+  - cue: "The Night the Sky Lied"
+    kind: card
+    text: "THE NIGHT THE SKY LIED\nDread Score: 9.0"
+
+  - cue: "Just after midnight, a siren"
+    kind: video
+    media: bunker-interior.mp4
+    note: Stock or recreation. Dark bunker, control panels, warning light.
+    rights: licensed stock
+
+  - cue: "A red word flashes"
+    kind: card
+    text: "LAUNCH"
+    note: Replace with a motion-graphics recreation of the Oko warning panel.
+
+  - cue: "He has minutes to decide"
+    kind: video
+    media: bunker-interior.mp4
+    clip_start: "0:10"
+
+  # --- 1983 ----------------------------------------------------------------
+  - cue: "To understand that night"
+    kind: video
+    media: reagan-evil-empire-1983.mp4
+    note: Reagan Library WHTV 728. Pick the "evil empire" line.
+    source: https://www.reaganlibrary.gov/archives/video/trip-florida-president-reagans-speech-national-association-evangelicals-convention
+    rights: public domain
+
+  - cue: "In Moscow, Soviet leader Yuri Andropov"
+    kind: image
+    media: andropov.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "Then, on September 1st, Soviet fighters"
+    kind: image
+    media: kal007-headline.jpg
+    motion: pan-right
+    rights: check
+
+  - cue: "Across Europe and America, millions marched"
+    kind: video
+    media: protest-1983.mp4
+    rights: check (likely needs licence)
+
+  - cue: "schoolchildren practiced drills"
+    kind: video
+    media: duck-and-cover-1951.mp4
+    clip_start: "1:00"
+    source: Internet Archive, search "Duck and Cover" (National Archives or Prelinger copy)
+    rights: public domain
+
+  - cue: "NATO was preparing to deploy Pershing II"
+    kind: image
+    media: pershing-ii-launch-1983.jpg
+    motion: zoom-out
+    source: https://nara.getarchive.net/topics/pershing+ii+missile
+    rights: public domain
+
+  - cue: "From there, a warhead could reach"
+    kind: image
+    media: map-pershing-range.png
+    motion: zoom-in
+    note: Our own map. West Germany to Moscow, "under 10 minutes".
+    rights: own
+
+  - cue: "It was called Oko"
+    kind: image
+    media: oko-satellite-graphic.png
+    motion: zoom-in
+    note: Our own illustration of a satellite in high orbit.
+    rights: own
+
+  - cue: "In theory, it bought the Soviet leadership"
+    kind: image
+    media: earth-from-orbit.jpg
+    motion: pan-left
+    note: NASA imagery is public domain.
+    rights: public domain
+
+  # --- The person ----------------------------------------------------------
+  - cue: "Stanislav Petrov was 44 years old"
+    kind: image
+    media: petrov-portrait.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "He was born in 1939 near Vladivostok"
+    kind: image
+    media: vladivostok-1940s.jpg
+    motion: pan-right
+    rights: check
+
+  - cue: "Petrov trained as an engineer"
+    kind: image
+    media: soviet-engineers.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "By his own account, Petrov wasn't supposed"
+    kind: image
+    media: petrov-portrait-2.jpg
+    motion: pan-left
+    rights: check
+
+  - cue: "He was an analyst by temperament"
+    kind: image
+    media: petrov-portrait.jpg
+    motion: zoom-out
+
+  - cue: "His post was a bunker called Serpukhov-15"
+    kind: image
+    media: soviet-command-centre.jpg
+    motion: zoom-in
+    rights: licensed stock
+
+  - cue: "Petrov's report would go to the military high command"
+    kind: image
+    media: chain-of-command-graphic.png
+    motion: pan-right
+    note: Our own graphic. Petrov, then high command, then the Soviet leader.
+    rights: own
+
+  - cue: "In other words, the Soviet system put a human"
+    kind: image
+    media: soviet-command-centre.jpg
+    motion: pan-left
+
+  # --- The moment ----------------------------------------------------------
+  - cue: "At 12:15 a.m. on September 26th"
+    kind: card
+    text: "12:15 A.M.\n26 SEPTEMBER 1983"
+
+  - cue: "Petrov's protocol was clear"
+    kind: video
+    media: bunker-interior.mp4
+    clip_start: "0:30"
+
+  - cue: "Then a second launch appeared"
+    kind: video
+    media: launch-screen-recreation.mp4
+    note: Motion graphics, one alert becoming five.
+    rights: own
+
+  - cue: "Petrov later described sitting there"
+    kind: video
+    media: phone-intercom-recreation.mp4
+    note: Recreation. A hand on a phone, an intercom, faces turned toward him.
+    rights: own
+
+  - cue: "But Petrov didn't move"
+    kind: video
+    media: launch-screen-recreation.mp4
+    clip_start: "0:15"
+
+  - cue: "Start with the first alert"
+    kind: video
+    media: map-one-missile.mp4
+    note: Animated map, a single missile arc across the Arctic.
+    rights: own
+
+  - cue: "Then the screen added more"
+    kind: video
+    media: map-five-missiles.mp4
+    note: The same map, arcs appearing one by one up to five.
+    rights: own
+
+  - cue: "Because he knew what a real American first strike"
+    kind: video
+    media: map-hundreds-of-missiles.mp4
+    note: The key visual. The screen fills with hundreds of arcs.
+    rights: own
+
+  - cue: "Five missiles would do none of that"
+    kind: video
+    media: map-five-missiles.mp4
+    clip_start: "0:05"
+    note: Back to just five, small against the empty map.
+
+  - cue: "So Petrov was left with two explanations"
+    kind: card
+    text: "AN ATTACK THAT MAKES NO SENSE\nor\nA MACHINE THAT IS WRONG"
+
+  - cue: "And there was more. The ground-based radars"
+    kind: image
+    media: soviet-radar.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "But he also knew what was at stake"
+    kind: video
+    media: bunker-interior.mp4
+    clip_start: "0:40"
+
+  - cue: "The machine said it was certain"
+    kind: card
+    text: "The machine said it was certain.\nPetrov wasn't."
+
+  - cue: "So he picked up the phone"
+    kind: video
+    media: phone-intercom-recreation.mp4
+    clip_start: "0:10"
+
+  - cue: "Twenty minutes passed"
+    kind: card
+    text: ""
+    note: Silence on black. Let it breathe.
+
+  - cue: "In later interviews, Petrov said"
+    kind: image
+    media: petrov-later-years.jpg
+    motion: zoom-in
+    rights: check
+
+  # --- The outcome ---------------------------------------------------------
+  - cue: "The investigation found that the satellites"
+    kind: image
+    media: high-altitude-clouds.jpg
+    motion: pan-right
+    rights: check (NASA imagery is public domain)
+
+  - cue: "Petrov received no medal"
+    kind: image
+    media: petrov-later-years-2.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "He was later honored internationally"
+    kind: image
+    media: dresden-peace-prize-2013.jpg
+    motion: zoom-out
+    rights: check
+
+  - cue: "How did the world find out?"
+    kind: image
+    media: votintsev.jpg
+    motion: zoom-in
+    rights: check
+
+  - cue: "Journalists tracked Petrov down"
+    kind: image
+    media: fryazino.jpg
+    motion: pan-left
+    rights: check
+
+  - cue: "He said he had only been doing his job"
+    kind: image
+    media: petrov-later-years.jpg
+    motion: zoom-out
+
+  # --- Epilogue ------------------------------------------------------------
+  - cue: "Just six weeks later, in November 1983, NATO"
+    kind: video
+    media: nato-exercise-1983.mp4
+    note: DVIDS or NATO multimedia library.
+    rights: public domain
+
+  - cue: "Historians still argue"
+    kind: image
+    media: able-archer-documents.jpg
+    motion: pan-right
+    note: Declassified Able Archer documents (National Security Archive).
+    rights: check
+
+  - cue: "about 100 million Americans watched"
+    kind: image
+    media: the-day-after-promo.jpg
+    motion: still
+    note: Keep brief. Promotional still only.
+    rights: fair use risk
+
+  - cue: "President Reagan had watched an advance copy"
+    kind: image
+    media: reagan-camp-david.jpg
+    motion: zoom-in
+    note: Reagan Library photo.
+    rights: public domain
+
+  - cue: "Within a few years, Reagan and the new Soviet leader"
+    kind: video
+    media: reykjavik-1986.mp4
+    note: Reagan Library WHTV 027.
+    rights: public domain
+
+  - cue: "In 1987 they signed the INF Treaty"
+    kind: image
+    media: inf-treaty-signing-1987.jpg
+    motion: zoom-in
+    source: https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_signing.jpg
+    rights: public domain
+
+  - cue: "The fear of 1983 didn't simply fade"
+    kind: video
+    media: reykjavik-1986.mp4
+    clip_start: "0:30"
+
+  # --- Dread to Outcome ----------------------------------------------------
+  - cue: "Why do we call this averted by luck?"
+    kind: image
+    media: petrov-portrait.jpg
+    motion: zoom-in
+
+  - cue: "Dread to Outcome: nine to zero"
+    kind: card
+    text: "DREAD 9.0  →  OUTCOME 0\nBETTER THAN FEARED"
+
+  - cue: "The fear was real"
+    kind: card
+    text: "The fear was real.\nThe missiles were real.\nThe alarm was not."
