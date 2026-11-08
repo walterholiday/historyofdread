@@ -20,16 +20,21 @@ links:
   shot_list_doc: https://claude.ai/artifact/L8S5Fqgh5qdNFARnJVfj9x
 
 still_to_verify:
-  - Bunker distance from Moscow (sources disagree)
-  - Pershing II flight time to Soviet command centres and deployment date
-  - Date Oko entered service
-  - Date of Raisa Petrov's death
-  - Able Archer 83 Soviet alert claims
-  - The Day After audience figure
-  - INF Treaty date (December 1987)
+  - The warning panel's wording (СТАРТ, "reliability highest"), from Petrov's later interviews
+  - When Oko entered service ("had only just entered service")
 
 verified:
   - Petrov's "fifty-fifty" estimate of his odds
-  - Votintsev made the incident public
+  - Votintsev made the incident public in his 1998 memoir
   - Reagan's diary on The Day After (advance copy, 10 Oct 1983, "greatly depressed")
   - Filling in for an ill colleague is widely reported but traces to Petrov's own later interviews, so it is narrated as "by his own account"
+  - Pershing II range 1,770 km; could not reach Moscow from West Germany; first deployed late Nov 1983, operational at Mutlangen 15 Dec 1983
+  - Raisa Petrova died of cancer in 1997
+  - Petrov died 19 May 2017; not widely reported until September 2017
+  - Dresden Peace Prize, 17 Feb 2013
+  - Able Archer 83, 7-11 Nov 1983; Soviet air units put on alert; historians still disagree how close it came
+  - The Day After, about 100 million viewers, 20 Nov 1983
+  - INF Treaty signed 8 Dec 1987
+
+open_question:
+  - Historians disagree whether a launch would have followed Petrov's report (Podvig vs Blair). The ending currently takes Blair's side; consider one sentence acknowledging the debate.
