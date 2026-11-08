@@ -6,6 +6,8 @@
 //   oko-false-alarm-graphic.png   the same scene with sunlight glinting off high cloud
 //   chain-of-command-graphic.png  Petrov -> high command -> Soviet leader
 //   launch-screen-recreation.mp4  the warning panel: one launch, then five
+//   map-kal007.png                approximate track of KAL 007, 1 Sept 1983
+//   map-vladivostok.png           where Petrov was born
 
 const path = require('path');
 const fs = require('fs');
@@ -159,7 +161,58 @@ function launchFrame(i) {
   return svgDoc(body + tag('RECREATION'));
 }
 
+
+// --- KAL 007 --------------------------------------------------------------------
+// Approximate track of Korean Air Lines Flight 007, 1 September 1983, from Anchorage
+// across Soviet airspace over Kamchatka and Sakhalin. Illustration, not a flight path record.
+function kal007() {
+  const proj = d3.geoAzimuthalEquidistant().rotate([-175, -54]).scale(1150).translate([1340, 540]).clipAngle(40);
+  const p = d3.geoPath(proj);
+  const track = { type: 'LineString', coordinates: [[-149.9, 61.2], [-161.8, 60.8], [158.6, 53.6], [142.6, 47.6], [141.3, 46.6]] };
+  const toSeoul = { type: 'LineString', coordinates: [[141.3, 46.6], [126.98, 37.57]] };
+  const [ax, ay] = proj([-149.9, 61.2]);
+  const [sx, sy] = proj([141.3, 46.6]);
+  const [kx, ky] = proj([126.98, 37.57]);
+  const body = baseMap(proj) +
+    `<path d="${p(toSeoul)}" fill="none" stroke="${C.bone}" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="4 8"/>` +
+    `<path d="${p(track)}" fill="none" stroke="${C.red}" stroke-width="3.5"/>` +
+    `<circle cx="${ax}" cy="${ay}" r="7" fill="${C.bone}"/>` +
+    text(ax + 14, ay - 14, 'ANCHORAGE', { size: 20, weight: 600, fill: C.bone, spacing: 0.2, opacity: 0.85 }) +
+    `<circle cx="${kx}" cy="${ky}" r="6" fill="${C.bone}" fill-opacity="0.6"/>` +
+    text(kx - 14, ky + 34, 'SEOUL', { size: 20, weight: 600, fill: C.bone, anchor: 'end', spacing: 0.2, opacity: 0.6 }) +
+    `<circle cx="${sx}" cy="${sy}" r="14" fill="${C.redHot}" filter="url(#glow)"/>` +
+    text(sx - 26, sy + 44, 'SHOT DOWN', { size: 22, weight: 600, fill: C.red, anchor: 'end', spacing: 0.2 }) +
+    text(proj([150, 63])[0], proj([150, 63])[1], 'SOVIET UNION', { size: 26, weight: 600, fill: C.bone, opacity: 0.55, anchor: 'middle', spacing: 0.3 }) +
+    text(96, 128, '1 SEPTEMBER 1983', { size: 22, weight: 500, fill: C.dim, spacing: 0.22 }) +
+    text(96, 240, '269', { size: 112, weight: 600, fill: C.red, spacing: 0.02 }) +
+    text(96, 294, 'PEOPLE KILLED', { size: 22, weight: 500, fill: C.dim, spacing: 0.18 }) +
+    text(96, 364, 'KOREAN AIR LINES FLIGHT 007,', { size: 22, weight: 500, fill: C.bone, spacing: 0.18, opacity: 0.85 }) +
+    text(96, 398, 'OFF COURSE OVER SOVIET TERRITORY', { size: 22, weight: 500, fill: C.bone, spacing: 0.18, opacity: 0.85 }) +
+    tag('ILLUSTRATION · APPROXIMATE ROUTE');
+  return svgDoc(body);
+}
+
+// --- Vladivostok ----------------------------------------------------------------
+function vladivostok() {
+  const proj = d3.geoAzimuthalEquidistant().rotate([-95, -58]).scale(820).translate([1200, 560]).clipAngle(45);
+  const [vx, vy] = proj([131.9, 43.1]);
+  const [mx, my] = proj([37.6, 55.75]);
+  const body = baseMap(proj) +
+    `<circle cx="${mx}" cy="${my}" r="6" fill="${C.bone}" fill-opacity="0.7"/>` +
+    text(mx + 14, my + 8, 'MOSCOW', { size: 20, weight: 600, fill: C.bone, spacing: 0.2, opacity: 0.6 }) +
+    `<circle cx="${vx}" cy="${vy}" r="12" fill="${C.red}" filter="url(#glow)"/>` +
+    text(vx + 22, vy + 8, 'VLADIVOSTOK', { size: 22, weight: 600, fill: C.bone, spacing: 0.2 }) +
+    text(proj([90, 62])[0], proj([90, 62])[1], 'SOVIET UNION', { size: 26, weight: 600, fill: C.bone, opacity: 0.55, anchor: 'middle', spacing: 0.3 }) +
+    text(96, 128, 'STANISLAV PETROV', { size: 22, weight: 500, fill: C.dim, spacing: 0.22 }) +
+    text(96, 240, '1939', { size: 112, weight: 600, fill: C.red, spacing: 0.02 }) +
+    text(96, 294, 'BORN NEAR VLADIVOSTOK', { size: 22, weight: 500, fill: C.dim, spacing: 0.18 }) +
+    tag('ILLUSTRATION');
+  return svgDoc(body);
+}
+
 (async () => {
+  writePng(path.join(out, 'map-kal007.png'), kal007());
+  writePng(path.join(out, 'map-vladivostok.png'), vladivostok());
   writePng(path.join(out, 'map-pershing-range.png'), pershing());
   writePng(path.join(out, 'oko-satellite-graphic.png'), oko());
   writePng(path.join(out, 'oko-false-alarm-graphic.png'), oko({ glint: true }));
