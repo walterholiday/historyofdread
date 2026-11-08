@@ -26,9 +26,11 @@ shots:
     rights: licensed stock
 
   - cue: "A red word flashes"
-    kind: card
-    text: "LAUNCH"
-    note: Replace with a motion-graphics recreation of the Oko warning panel.
+    kind: video
+    media: launch-screen-recreation.mp4
+    clip_start: "0:00.5"
+    note: Our recreation of the warning panel (СТАРТ = launch). Made by pipeline/graphics.
+    rights: own
 
   - cue: "He has minutes to decide"
     kind: video
@@ -156,7 +158,8 @@ shots:
   - cue: "Then a second launch appeared"
     kind: video
     media: launch-screen-recreation.mp4
-    note: Motion graphics, one alert becoming five.
+    clip_start: "0:02"
+    note: The count rising from 2 to 5.
     rights: own
 
   - cue: "Petrov later described sitting there"
@@ -168,7 +171,7 @@ shots:
   - cue: "But Petrov didn't move"
     kind: video
     media: launch-screen-recreation.mp4
-    clip_start: "0:15"
+    clip_start: "0:10"
 
   - cue: "Start with the first alert"
     kind: video
@@ -231,6 +234,13 @@ shots:
 
   # --- The outcome ---------------------------------------------------------
   - cue: "The investigation found that the satellites"
+    kind: image
+    media: oko-false-alarm-graphic.png
+    motion: zoom-in
+    note: Our graphic. Sun, high cloud and satellite lined up.
+    rights: own
+
+  - cue: "an alignment of sun, cloud and orbit"
     kind: image
     media: high-altitude-clouds.jpg
     motion: pan-right
