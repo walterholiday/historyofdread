@@ -34,6 +34,7 @@ The goal is a monetised channel. See [CHANNEL.md](CHANNEL.md) for the format, sc
 | 002 | [The Comet's Poison Tail](episodes/002-the-comets-poison-tail) | Pure myth | 7.7 to 0 | Script drafted, needs expanding to 10 min |
 | 003 | [The Gray Slabs](episodes/003-the-gray-slabs) | Realised | 7.3 to 10 | Script drafted, needs expanding to 10 min |
 | 004 | [The Sky Is Falling](episodes/004-the-sky-is-falling) | Ongoing | 6.7 to Undecided | Script drafted |
+| 005 | [The Hole in the Sky](episodes/005-the-hole-in-the-sky) | Averted by action | 8.0 to 2 | Script drafted and fact-checked |
 
 The full story backlog lives in Claude Docs: [History of Dread — Story Backlog](https://claude.ai/artifact/GUTTXHrfMZTnjdjoiGF96Q).
 

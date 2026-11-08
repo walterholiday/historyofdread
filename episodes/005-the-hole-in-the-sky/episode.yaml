@@ -1,0 +1,40 @@
+number: 5
+title: The Hole in the Sky
+person: Sherwood Rowland, Mario Molina and Joseph Farman
+year: 1974-1987
+outcome_label: Averted by action
+category: Science / environment
+target_minutes: 10-12
+status: drafted   # fact-checked 2026-11-07; a few items still open
+
+dread_score:
+  intensity: 7
+  reach: 8
+  stakes: 9
+  total: 8.0
+outcome_score: 2   # real damage, still healing
+verdict: Better than feared
+
+links:
+  script_doc: https://claude.ai/artifact/8EMvTMkY9RQk3iyvhZTCR9
+
+notes:
+  - The "NASA software threw the data away" story is a myth. Low readings were flagged, not deleted, and a faulty South Pole ground reading made NASA doubt its satellite. The script tells the true version.
+  - The chlorine "smoking gun" flight and the Montreal Protocol signing were on the same day, 16 September 1987.
+  - Light, hopeful ending. Good for ads, and a good counterweight after a heavy episode.
+
+shorts:
+  - The scientist who thought his instruments were wrong
+  - "Three millimetres: how thin the ozone layer really is"
+  - Rowland's dinner-table line about "the end of the world"
+  - Accused of being KGB agents for doing chemistry
+  - Why NASA's satellites missed it, and the myth everyone repeats
+  - The only treaty every country on Earth has ratified
+  - Dread Score versus outcome
+
+still_to_verify:
+  - US aerosol ban year (1978)
+  - Ozone layer compressed thickness (about 3 mm) and altitude (15-35 km)
+  - 2009 date of universal ratification
+  - EPA's 280 million US skin cancer cases prevented, against the 2015 EPA report
+  - Halley ozone measurements dating back to the 1950s
