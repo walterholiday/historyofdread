@@ -30,7 +30,7 @@ The goal is a monetised channel. See [CHANNEL.md](CHANNEL.md) for the format, sc
 
 | # | Title | Outcome label | Dread to Outcome | Status |
 | --- | --- | --- | --- | --- |
-| 001 | [The Night the Sky Lied](episodes/001-the-night-the-sky-lied) | Averted by luck | 9.0 to 0 | Script locked, recording this week |
+| 001 | [The Night the Sky Lied](episodes/001-the-night-the-sky-lied) | Averted by luck | 9.0 to 0 | Script locked, graphics built, recording this week ([production pack](https://claude.ai/artifact/Qv5KBpCZ1Tn3mZ1oWMvEWJ)) |
 | 002 | [The Comet's Poison Tail](episodes/002-the-comets-poison-tail) | Pure myth | 7.7 to 0 | Script drafted, needs expanding to 10 min |
 | 003 | [The Gray Slabs](episodes/003-the-gray-slabs) | Realised | 7.3 to 10 | Script drafted, needs expanding to 10 min |
 | 004 | [The Sky Is Falling](episodes/004-the-sky-is-falling) | Ongoing | 6.7 to Undecided | Script drafted |
